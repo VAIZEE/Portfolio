@@ -11,15 +11,15 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Tourney:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-		<script type="module" crossorigin src="./assets/index-BHfieI28.js"></script>
-		<link rel="stylesheet" crossorigin href="./assets/index-4heBdEpC.css">
+		<script type="module" crossorigin src="./assets/index-lejHcw5J.js"></script>
+		<link rel="stylesheet" crossorigin href="./assets/index-DAoFyZHk.css">
 	</head>
 	<body>
 
 	<!--<canvas id="background"></canvas>   -->
 
 	<main>
-
+		<!--HERO   -->
 		<section id="hero">
 			<div class="video-background">
 				<video autoplay muted loop playsinline>
@@ -39,6 +39,37 @@
 					<a href="https://discord.com/users/vaize" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
 				</div>
 			</div>
+		</section>
+
+		<!--Work History   -->
+		<section id="work-history">
+			<div class="work-header">
+				<h2 class="work-title">Work History</h2>
+			</div>
+
+			<div class="carousel-container">
+				<div class="carousel-track">
+				  <li class="carousel-slide">Slide 1: Your work history or content here</li>
+				  <li class="carousel-slide">Slide 2: Another job or experience</li>
+				  <li class="carousel-slide">Slide 3: Additional details</li>
+				</div>
+				<button class="carousel-button prev">&#10094;</button>
+				<button class="carousel-button next">&#10095;</button>
+			  </div>
+			
+			<div class="cv-controls">
+				<span class="cv-label"><i class="fas fa-download"></i> CV</span>
+				<div class="cv-lang-buttons">
+				  <a href="cv-de.pdf" download class="cv-button">DE</a>
+				  <a href="cv-en.pdf" download class="cv-button">EN</a>
+				</div>
+			</div>
+		</section>
+		
+		<section id="tech-stack">
+			<h2>Tech Stack</h2>
+			<div id="particle-container"></div>
+			<div id="fpsCounter">FPS: 0</div>
 		</section>
 
 		<!-- About and Contact Section -->
@@ -96,6 +127,5 @@
 		<!-- EmailJS -->
 		<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
 		
-
 	</body>
 </html>
