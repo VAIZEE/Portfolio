@@ -16,8 +16,8 @@
 					&family=Roboto:ital,wght@0,100..900;1,100..900
 					&family=Tourney:ital,wght@0,100..900;1,100..900
 					&display=swap" rel="stylesheet">
-		<script type="module" crossorigin src="./assets/index-DYeQ8l2N.js"></script>
-		<link rel="stylesheet" crossorigin href="./assets/index-BIfRcVHc.css">
+		<script type="module" crossorigin src="./assets/index-DPdgz-v8.js"></script>
+		<link rel="stylesheet" crossorigin href="./assets/index-QrfsB_yY.css">
 	</head>
 	<body>
 
@@ -30,25 +30,37 @@
 	<main>
 		<!--HERO   -->
 		<header id="hero">
+			<!--	
 			<div class="video-background">
 				<video autoplay muted loop playsinline>
 					<source src="./videos/titleVideo.mp4" type="video/mp4">
 					Your browser does not support the video tag.
 				</video>
 			</div>
-		
+			-->
+			<div class="video-container">
+				<video class="video-background videoA" muted autoplay playsinline></video>
+				<video class="video-background videoB" muted autoplay playsinline></video>
+			</div>
 
 			<img src="./logos/MeLogo.png" alt="Logo" id="logo" />
 			<h1>Valentin Gundlach</h1>
-			<h3>Software & Game Developer</h3>
-			<div class="socials" id="hero-socials">
+			<h4>Software & Game Developer</h3>
+			<nav class="socials" id="hero-socials">
+				<a href="https://github.com/VAIZEE" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
 				<a href="https://linkedin.com/in/valentin-gundlach-ba9a09296" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
 				<a href="https://www.instagram.com/valentin.gch/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
 				<a href="https://discord.com/users/vaize" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
-			</div>
+			</nav>
 
 		</header>
 		
+		<!--Projects -->
+		<section id="projects">
+			<h2>PROJECTS</h2>
+			<div id="project-container"> <!-- Projects get loaded here--> </div>
+		</section>
+
 		<!-- Tech Stack -->
 		<section id="tech-stack">
 			<div id="particle-container"></div>
@@ -88,32 +100,30 @@
 			</div>
 		</section>
 
-		<!-- Custom Popup Modal -->
-		<div id="customPopup" class="popup-modal">
-			<div class="popup-content">
-			<p id="popupMessage">Your message here.</p>
-			<button id="popupCloseBtn">CLOSE</button>
-			</div>
-		</div>
-
-		<!-- Rights Section -->
-		<section id="footer">
-			<div id="footer-background"></div>
-			<section id="reveal-section">
-				<img src="test1.jpg" alt="Revealed Image" class="masked-img" />
-			</section>
-
-			<footer class="footer-center">
-				<h2>&copy; 2025 Valentin Gundlach. All rights reserved.</h2>
-				<div class="socials" id="footer-socials">
+		<!-- Footer -->
+		<footer id="footer">
+			<div id="footer-background"></div> <!-- background image effect -->
+			
+			<section id="reveal-section"></section><!--  background color effect -->
+			
+			<div class="footer-content">
+				<h4>&copy;2025 Valentin Gundlach. All rights reserved.</h4>
+				<p class="signature"> Built from scratch with <span class="heart" aria-label="love">❤️</span>.</p>
+				
+				<nav class="socials" id="footer-socials">
+					<a href="https://github.com/VAIZEE" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
 					<a href="https://linkedin.com/in/valentin-gundlach-ba9a09296" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
 					<a href="https://www.instagram.com/valentin.gch/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
 					<a href="https://discord.com/users/vaize" target="_blank" aria-label="Discord"><i class="fab fa-discord"></i></a>
-				</div>
-			</footer>
+				</nav>
+			</div>
+		</footer >
 
-		</section>
-
+		<canvas id="cursorCanvas" style="position: fixed; top: 0; left: 0; pointer-events: none; z-index: 9999;"></canvas>
+		<div class="custom-cursor">
+			<div class="dot"></div>
+			<div class="ring"></div>
+		</div>
 	</main>
 	</body>
 </html>
